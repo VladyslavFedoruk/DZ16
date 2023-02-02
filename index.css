@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #F7F7F7;
+}
+
+.form-holder {
+    max-width: 570px;
+    width: 100vw;
+    margin: 0 auto;
+    /* background-color: #ffffff; */
+    background-color: white;
+    padding: 35px 36px 16px 36px;
+    border: 5px rgb(56, 214, 24);
+    border-radius: 6px;
+}
+
+main {
+    background: rgb(138, 138, 138);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font: 500 24px / 32px 'Arial', sans-serif;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #545454;
+    letter-spacing: -0.2px
+}
+
+/* input{
+    width: 100%;
+} */
+
+/* .form-group{
+    display: flex;
+    justify-content: space-between;
+} */
+
+.form-group-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 12px
+}
+
+/* .form-group-input{
+    width: calc(50% - 6px);
+} */
+
+.form-group-input input,
+.form-group-select select {
+    width: 100%;
+    border-radius: 6px;
+    height: 38px;
+    border: 1px solid #E4E4E4;
+    outline: none;
+    padding: 0 15px;
+}
+
+.form-group-input input:focus,
+.form-group-select select:focus {
+    border-color: #1f84e9;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group-radiobtn {
+    display: flex;
+}
+
+.form-group-radio {
+    display: flex;
+    align-items: center;
+}
+
+.form-group-radio {
+    position: relative;
+}
+
+.form-group-radio input {
+    position: absolute;
+    opacity: 0;
+}
+
+.form-group-radio label {
+    padding-left: 28px;
+    box-sizing: border-box;
+}
+
+.form-group-radio label::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #E4E4E4;
+    content: "";
+    transition: .2s all;
+}
+
+.form-group-radio input:checked+label::before {
+    border: 6px solid #007BFF;
+}
+
+.form-group-radiobtn>div {
+    margin-right: 20px;
+}
+
+.form-group-radio input {
+    margin-right: 8px;
+}
+
+.form-tooltip {
+    display: block;
+    margin-top: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: black;
+    font-style: bold;
+}
+
+/* 
+.form-group-checkbox input {
+    position: absolute;
+    opacity: 0;
+}
+
+.form-group-checkbox label {
+    position: relative;
+    display: inline-flex;
+    padding-right: 28px;
+}
+
+
+.form-group-checkbox label::after {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 0;
+    transition: .2s all;
+}
+
+.form-group-checkbox input:checked+label::after {
+    width: 13px;
+    border-radius: 0;
+    border-top: none;
+    border-right: none;
+    transform: rotate(45deg);
+    top: -4px;
+
+} */

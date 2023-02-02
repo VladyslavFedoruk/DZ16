@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <main>
+        <section class="form-holder">
+            <h1>Create an Account</h1>
+            <form class="from">
+
+                <!--Name and Surname-->
+                <!-- <div class="form-group-2col"> -->
+                <div class="form-group form-group-2col">
+                    <div class="form-group-input">
+                        <label for="fistname">First Name</label>
+                        <input id="firstname" type="text">
+                    </div>
+
+
+                    <div class="form-group-input">
+                        <label for="lastname">Last Name</label>
+                        <input id="lastname" type="text">
+                    </div>
+                </div>
+
+                <!--Email-->
+                <div class="form-group">
+                    <div class="form-group-input">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="text">
+                        <span class="form-tooltip">We'll never share your email with anyone else.</span>
+                    </div>
+                </div>
+                <!-- </div> -->
+
+                <!--radio-button-->
+                <div class="form-group-radiobtn">
+                    <div class="form-group-radio">
+                        <input type="radio" id="gender1" name="contact" value="male">
+                        <label for="gender1">Male</label>
+                    </div>
+
+                    <div class="form-group-radio">
+                        <input type="radio" id="gender2" name="contact" value="female">
+                        <label for="gender2">Female</label>
+                    </div>
+                </div>
+
+                <!-- <div class="form-group form-group-checked-btns">
+                    <div class="form-group-checkbox">
+                        <input type="radio" id="approve">
+                        <label for="approve">Approved</label>
+                    </div>
+                </div> -->
+
+                <!--Location-->
+                <div class="form-group form-group-2col">
+                    <div class="form-group-select">
+                        <label for="country">Country</label>
+                        <select name="country" id="country">
+                            <option>Select</option>
+                            <option value="ukraine">Ukraine</option>
+                            <option value="france">France</option>
+                            <option value="poland">Poland</option>
+                            <option value="german">German</option>
+                            <option value="otsossia">Otsossia</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group-input">
+                        <label for="city">City</label>
+                        <input id="city" type="text">
+                    </div>
+                </div>
+                <button type="submit">Sign Up</button>
+
+            </form>
+            <p>By clicking the 'Sign Up' button, you confirm that you accept our <a href="#">Terms of Use</a>
+                and <a href="#">Privacy Policy</a>.</p>
+
+            <p>Have an account? <a href="#">Log In</a></p>
+        </section>
+    </main>
+
+</body>
+
+</html>
